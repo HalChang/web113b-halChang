@@ -1,0 +1,103 @@
+/* .heading {
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -3.5rem;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../assets/images/Minecraft/chicken.gif);
+  background-size: 100% 100%;
+  transform: rotateY(180deg);
+} */
+
+p {
+  margin-bottom: 2rem;
+}
+
+/* ul {
+  list-style-image: url(../assets/images/Minecraft/iron-golem-guapo.gif);
+} */
+
+/***************************************/
+
+/** (G)I-DLE cards group **/
+.gidle-heading {
+	margin: 0.625rem 0 0.125rem;
+	font-size: 4rem;
+	font-weight: 900;
+	color: #9c0053;
+	text-align: center;
+}
+
+.cards-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin: 1.25rem 0;
+}
+
+.cards-group .cards {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 0.75rem;
+}
+
+.cards-group .cards img {
+	max-width: 100%;
+	border-radius: 0.5rem;
+	transition: transform 0.2s;
+}
+
+.cards-group .cards img:hover {
+	transform: translateY(-0.75rem);
+	filter: brightness(1.1);
+}
+
+/***************************************/
+
+.traffic-sign {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3.125rem 4.5rem;
+}
+
+.warning {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: red;
+  border: 0.25rem solid #fff;
+  border-radius: 50%;
+  outline: 0.125rem solid red;
+  transition: all 2s ease-in-out;
+}
+
+.warning::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 1.25rem;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 0.25rem;
+}
+
+.warning:nth-child(odd):hover {
+  transform: rotate(1080deg);
+}
+
+.warning:nth-child(even):hover {
+  transform: rotate(-1080deg);
+}
+
+/***************************************/
